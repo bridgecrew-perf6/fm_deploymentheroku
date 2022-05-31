@@ -1,0 +1,337 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #555555;
+  background-color: #151515;
+}
+
+a {
+  color: #7cc576;
+}
+
+a:hover {
+  color: #9ed49a;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+hr.solid {
+  border-top: 1px solid #37bff0;
+  margin: 80px;
+  opacity: 20%;
+
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #37bff0;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #0d9ace;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  background-color: #151515;
+}
+
+#hero .hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 0px;
+}
+
+#logo {
+  width: 18%;
+  margin-bottom: 50px;
+}
+
+#video-uni {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    line-height: 22px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  color: #ffffff;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color: #aeaeae;
+}
+
+
+/*--------------------------------------------------------------
+# Innovative
+--------------------------------------------------------------*/
+#video-innovative {
+  width: 100%;
+}
+
+#innovative-title {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#innovative-subtitle {
+  color: rgb(102, 173, 196);
+}
+
+/*--------------------------------------------------------------
+# Ennio
+--------------------------------------------------------------*/
+.ennio {
+  color: white;
+}
+
+.ennio .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.ennio .member .member-img {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#img-ennio {
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+}
+
+#ennio-title {
+  display: inline-block;
+  align-self: flex-end;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#ennio-description {
+  display: inline-block;
+  align-self: flex-start;
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 250px;
+  word-wrap: break-word;
+}
+
+#ennio-btn {
+  margin-top: 20px;
+  float: right;
+  border: none;
+  color: white;
+  background-color: #37bff0;
+  width: 150px;
+  height: 60px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px rgb(63, 63, 63);
+}
+
+/*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+.news {
+  text-align: center;
+  color: white;
+}
+
+.news-title {
+  margin-bottom: 40px;
+}
+
+.news-description {
+  font-weight: lighter;
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.clients img {
+  width: 75%;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.clients img:hover {
+  -webkit-filter: none;
+  filter: none;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .clients img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 575px) {
+  .clients img {
+    width: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  font-size: 14px;
+  position: relative;
+}
+
+#footer .footer-top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#footer .footer-top h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+}
+
+#footer .footer-top .social-links {
+  margin-top: 30px;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 50px;
+  display: inline-block;
+  background: #37bff0;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links .facebook:hover {
+  background: #008bbe;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top .social-links .youtube:hover {
+  background: #b9140b;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top .social-links .instagram:hover {
+  background: #ac38ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #008bbe;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid #37bff020;
+  z-index: 2;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .copyright {
+  text-align: center;
+}
