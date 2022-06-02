@@ -35,7 +35,11 @@
   <section id="hero">
     <div class="hero-container">
       <a href="index.html" class="hero-logo" data-aos="zoom-in"><img id="logo" src="img/Logo_FM_White.png" alt=""></a>
-        <video id="video-uni" src="video/Universi Sonori_English Version.mp4" playsinline autoplay muted loop data-aos="fade-left" ></video>
+        <video id="video-uni" src="video/Universi Sonori_English Version.mp4" playsinline muted loop autoplay data-aos="fade-left"></video>
+    </div>
+    <div id="audio-control">
+      <i class='bx bx-volume-full' id="volume-full"></i>
+      <i class='bx bx-volume-mute' id="volume-mute"></i>
     </div>
   </section><!-- End Hero -->
 
@@ -49,16 +53,20 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1">
+          <div class="col-lg-6 order-1 order-lg-1"> 
             <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
               <h1 id="innovative-title">INNOVATIVE <br>ENTERTAINMENT <br>TECHNOLOGIES <br></h1>
               <h3 id="innovative-subtitle">The new shape of italian art</h2>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <video id="video-innovative" autoplay="autoplay" loop muted>
+          <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <video id="video-innovative" playsinline muted loop autoplay>
               <source src="video/Promo_Forward Management.mp4" type="video/mp4" data-aos="fade-left">
             </video>
+            <div id="audio-control2">
+              <i class='bx bx-volume-full' id="volume-full2"></i>
+              <i class='bx bx-volume-mute' id="volume-mute2"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -70,9 +78,9 @@
     <section id="ennio" class="ennio">
       <div class="container">
         
-        <div class="row">
+        <div class="row" id="row1">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="img1-ennio">
             <div class="member" data-aos="zoom-in">
               <div class="member-img">
                 <img src="img/ennio/ennio1.jpg" id="img-ennio" class="img-fluid" alt="">
@@ -80,7 +88,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="img2-ennio">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
               <div class="member-img">
                 <img src="img/ennio/ennio2.jpg" id="img-ennio" class="img-fluid" alt="">
@@ -113,7 +121,7 @@
           </div>
 
           <div id ="ennio-description">
-            <p>“Ennio Morricone Universi Sonori” is a musical 
+            <p id="ennio-paragraph">“Ennio Morricone Universi Sonori” is a musical 
               project that offers a different and, 
               in some ways,unexpected image of the Roman 
               composer's production of music for the cinema.</p>
